@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Test output
+coverage/
+
+# Caches and temp files
+.cache/
+*.tsbuildinfo
+tmp/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# AI Blueprint local workflow files
+.agents/
+.claude/
+blueprint/
+CLAUDE.md
