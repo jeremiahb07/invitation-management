@@ -14,10 +14,11 @@ Copilot, Gemini CLI, Aider, Zed, Windsurf, and Claude Code all read this file.
 - Runtime: Node, ESM (`"type": "module"`)
 - Framework: Express 5
 - Language: TypeScript, strict mode, compiled with `tsc` to `dist/`
+- Database: MongoDB via Mongoose, reached through `src/lib/db.ts`
 - Package manager: npm
 - Dev loop: `tsx watch`
 
-No frontend, database, auth, or validation library is installed. Adding one is a
+No frontend, auth, or validation library is installed. Adding one is a
 deliberate, discussed step, never a silent mid-task install.
 
 ## Commands
@@ -74,11 +75,11 @@ The server reads `PORT` from the environment and falls back to `3000`.
 - Server entry: `src/server.ts`
 - Routes: `src/routes/[feature].ts`
 - Business logic: `src/services/[feature].ts`
+- Mongoose models: `src/models/[feature].ts`
 - Types: `src/types/[feature].ts`
 - Utils: `src/lib/[utility].ts`
 
-Only `src/server.ts` exists today. Create these directories when a feature needs
-one, not upfront.
+Create these directories when a feature needs one, not upfront.
 
 ### Naming
 
